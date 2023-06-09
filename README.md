@@ -18,7 +18,7 @@
 * Kubernetes*
 * Keycloak 
 
-## Accounts Service
+## [Account Service](https://github.com/muhib349/account-service.git)
 * Used in-memory H2 database
 * Used FeignClient to invoke other microservices (card service and loan service)
 * Connected with config server to get all configuration for all environments
@@ -26,22 +26,22 @@
 * Distributed tracing and log aggregation with Spring Cloud Sleuth and data-visualization with Zipkin
 * Monitoring microservices metrics & health using Prometheus and Grafana
 
-## Cards Service
+## [Card Service](https://github.com/muhib349/card-service.git)
 Kind of same implementation as accounts service 
-## Loans Service
+## [Loan Service](https://github.com/muhib349/loan-service.git)
 Kind of same implementation as accounts service
 
-## Config Server
+## [Config Server](https://github.com/muhib349/bank-config-server.git)
 * Load all configuration from a GitHub repository
 * Served properties based on environment
 * Encrypt or Decrypt properties in config server
 
-## Eureka Server
+## [Eureka Server](https://github.com/muhib349/eureka-server.git)
 * Treated as service discovery where other microservices will be registered with it
 * Other microservices can locate each by using Eureka Server
 * Microservices/clients will send their heartbeats at a regular interval to central server about their health
 
-## Gateway Server
+## [Gateway Server](https://github.com/muhib349/gateway-server.git)
 * Known as API gateway implemented using spring cloud gateway
 * Handled custom routing requirements from a central place
 
