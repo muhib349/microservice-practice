@@ -4,3 +4,15 @@
 [submodule "loan-service"]
 	path = loan-service
 	url = https://github.com/muhib349/loan-service.git
+[submodule "card-service"]
+	path = card-service
+	url = https://github.com/muhib349/card-service.git
+[submodule "bank-config-server"]
+	path = bank-config-server
+	url = https://github.com/muhib349/bank-config-server.git
+[submodule "eureka-server"]
+	path = eureka-server
+	url = https://github.com/muhib349/eureka-server.git
+[submodule "gateway-server"]
+	path = gateway-server
+	url = https://github.com/muhib349/gateway-server.git
