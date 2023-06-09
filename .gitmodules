@@ -1,0 +1,6 @@
+[submodule "account-service"]
+	path = account-service
+	url = https://github.com/muhib349/account-service.git
+[submodule "loan-service"]
+	path = loan-service
+	url = https://github.com/muhib349/loan-service.git
