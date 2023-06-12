@@ -34,6 +34,7 @@ Kind of same implementation as accounts service
 ## [Config Server](https://github.com/muhib349/bank-config-server.git)
 * Load all configuration from a GitHub repository
 * Served properties based on environment
+* RefreshScope for configuration changes with spring cloud bus(rabbitmq)
 * Encrypt or Decrypt properties in config server
 
 ## [Eureka Server](https://github.com/muhib349/eureka-server.git)
