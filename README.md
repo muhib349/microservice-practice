@@ -1,5 +1,5 @@
-# Hands-on practice on microservice Architecture with Java, Spring and Docker
-#### In this hands-on project, I've learned microservice best practices with the latest technologies.
+# A hands-on project on microservice Architecture with Java, Spring, and Docker
+#### In this project, I've learned microservice best practices with the latest technologies.
 
 
 ## Topics Covered
