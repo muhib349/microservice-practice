@@ -1,4 +1,4 @@
-# Hands on practice on microservice Architecture with Java, Spring and Docker
+# Hands-on practice on microservice Architecture with Java, Spring and Docker
 #### In this hands-on project, I've learned microservice best practices with the latest technologies.
 
 
@@ -14,7 +14,6 @@
 * Micrometer
 * Prometheus
 * Grafana
-* Keycloak 
 
 ## [Account Service](https://github.com/muhib349/account-service.git)
 * Used in-memory H2 database
