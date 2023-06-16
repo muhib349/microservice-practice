@@ -7,7 +7,6 @@
 * Spring Cloud Config
 * Spring Cloud Gateway
 * Spring Cloud Netflix
-* Spring Cloud Sleuth
 * The 12-factor App
 * Docker and DockerHub
 * Resilience4j
@@ -15,39 +14,38 @@
 * Micrometer
 * Prometheus
 * Grafana
-* Kubernetes*
 * Keycloak 
 
 ## [Account Service](https://github.com/muhib349/account-service.git)
 * Used in-memory H2 database
 * Used FeignClient to invoke other microservices (card service and loan service)
-* Connected with config server to get all configuration for all environments
-* Implemented Netflix Eureka Client for service registration with Eureka server
-* Distributed tracing and log aggregation with Spring Cloud Sleuth and data-visualization with Zipkin
+* Connected with config server to get all configurations for all environments
+* Implemented Netflix Eureka Client for service registration with the Eureka server
+* Distributed tracing and log aggregation with Spring Cloud Sleuth and data visualization with Zipkin
 * Monitoring microservices metrics & health using Prometheus and Grafana
 
 ## [Card Service](https://github.com/muhib349/card-service.git)
-Kind of same implementation as accounts service 
+Kind of the same implementation as the accounts service 
 ## [Loan Service](https://github.com/muhib349/loan-service.git)
-Kind of same implementation as accounts service
+Kind of the same implementation as the accounts service
 
 ## [Config Server](https://github.com/muhib349/bank-config-server.git)
 * Load all configuration from a GitHub repository
-* Served properties based on environment
+* Served properties based on the environment
 * RefreshScope for configuration changes with spring cloud bus(rabbitmq)
 * Encrypt or Decrypt properties in config server
 
 ## [Eureka Server](https://github.com/muhib349/eureka-server.git)
 * Treated as service discovery where other microservices will be registered with it
 * Other microservices can locate each by using Eureka Server
-* Microservices/clients will send their heartbeats at a regular interval to central server about their health
+* Microservices/clients will send their heartbeats at regular intervals to the central server about their health
 
 ## [Gateway Server](https://github.com/muhib349/gateway-server.git)
 * Known as API gateway implemented using spring cloud gateway
 * Handled custom routing requirements from a central place
 
 ## Docker Compose
-* Maintained docker compose file for dev and prod environment
+* Maintained docker-compose file for dev and prod environment
 * Run all related services in a sequential manner using a single command
 ## Some Maven Commands I've Used
 
