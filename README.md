@@ -4,9 +4,7 @@
 
 ## Topics Covered
 * Spring Boot
-* Spring Cloud Config
-* Spring Cloud Gateway
-* Spring Cloud Netflix
+* Spring Cloud (Config, Gateway, Netflix)
 * The 12-factor App
 * Docker and DockerHub
 * Resilience4j
@@ -16,12 +14,13 @@
 * Grafana
 
 ## [Account Service](https://github.com/muhib349/account-service.git)
-* Used in-memory H2 database
+* Connected with mysql server running as container
 * Used FeignClient to invoke other microservices (card service and loan service)
 * Connected with config server to get all configurations for all environments
 * Implemented Netflix Eureka Client for service registration with the Eureka server
-* Distributed tracing and log aggregation with Spring Cloud Sleuth and data visualization with Zipkin
-* Monitoring microservices metrics & health using Prometheus and Grafana
+* Distributed tracing and log aggregation
+* Monitored microservices metrics & health using Prometheus and Grafana
+* Integrated Apache kafka to save account info
 
 ## [Card Service](https://github.com/muhib349/card-service.git)
 Kind of the same implementation as the accounts service 
@@ -42,6 +41,9 @@ Kind of the same implementation as the accounts service
 ## [Gateway Server](https://github.com/muhib349/gateway-server.git)
 * Known as API gateway implemented using spring cloud gateway
 * Handled custom routing requirements from a central place
+
+## About Kafka Integration
+For simplicity, I've used Kafka producer & consumer in `account-service`. Created a rest endpoint to save account info in the database. The Kafka producer writes an event into a topic when a client hit the endpoint, and the Kafka consumer consumes the event and writes data into the database.
 
 ## Docker Compose
 * Maintained docker-compose file for dev and prod environment
