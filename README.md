@@ -12,15 +12,16 @@
 * Micrometer
 * Prometheus
 * Grafana
+* Apache Kafka
 
 ## [Account Service](https://github.com/muhib349/account-service.git)
-* Connected with mysql server running as container
+* Connected with MySQL server running as a container
 * Used FeignClient to invoke other microservices (card service and loan service)
 * Connected with config server to get all configurations for all environments
 * Implemented Netflix Eureka Client for service registration with the Eureka server
 * Distributed tracing and log aggregation
 * Monitored microservices metrics & health using Prometheus and Grafana
-* Integrated Apache kafka to save account info
+* Integrated Apache Kafka to save account info
 
 ## [Card Service](https://github.com/muhib349/card-service.git)
 Kind of the same implementation as the accounts service 
